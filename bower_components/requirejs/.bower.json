@@ -1,0 +1,12 @@
+{
+  "name": "requirejs",
+  "version": "2.1.7",
+  "_release": "2.1.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.1.7",
+    "commit": "803a48e8e72dc5c02f1dc5b3fb9d6fdb3747357b"
+  },
+  "_source": "git://github.com/jrburke/requirejs.git",
+  "_target": "2.1.7"
+}

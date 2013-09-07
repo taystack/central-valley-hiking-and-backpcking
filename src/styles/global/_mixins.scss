@@ -1,0 +1,57 @@
+@mixin font($size: 16pt, $color: $font-color) {
+  font: {
+    family: $font-family;
+    size: $size;
+  }
+  color: $color;
+}
+
+@mixin simple-font (
+  $color: $font-color,
+  $family: $bbutton-font,
+  $size: $default-font-size
+  ) {
+  color: $color;
+  font-family: $family;
+  font-size: $size;
+}
+@mixin bbutton-font(
+  $color: $bbutton-color,
+  $font: $font-color,
+  $size: 24px,
+  $shadow: $simple-shadow,
+  $family: $bbutton-font,
+  $invert: false
+  ) {
+  @include simple-font($font, $bbutton-font, $size);
+  text-shadow: 0 1px $shadow;
+  @if $invert {
+    text-shadow: 0 -1px $shadow;
+  }
+}
+@mixin bbubbly(
+  $color: $bbutton-color,
+  $font: $font-color,
+  $font-size: $default-font-size,
+  $shadow: $simple-shadow,
+  $radius: $bbutton-radius
+  ) {
+  background: $color;
+  background-image: linear-gradient(lighten($color, 10%), darken($color, 5%));
+  border: {
+    left: 1px solid rgba(0,0,0,0.2);
+    right: 1px solid rgba(0,0,0,0.2);
+    bottom: 1px solid rgba(0,0,0,0.2);
+    top: 1px solid rgba(0,0,0,0.01);
+  }
+  border-radius: $radius;
+  padding: 8px 14px;
+  @include bbutton-font($bbutton-color, $font, $font-size, $shadow);
+  &:hover {
+    background-image: linear-gradient(lighten($color, 5%), $color);
+    cursor: pointer;
+  }
+  &:active {
+    background-image: linear-gradient(darken($color, 5%), lighten($color, 5%));
+  }
+}

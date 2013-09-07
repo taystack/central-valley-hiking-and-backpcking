@@ -1,0 +1,22 @@
+#about {
+  .person {
+    border: 1px solid $person-border-color;
+    box-shadow: 0 0 10px 2px $person-border-color;
+    margin-top: 25px;
+    padding: 15px;
+    width: 95%;
+  }
+}
+.person, .person .image {
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  a {
+    cursor: default;
+  }
+}
+
+[class*="span"] {
+  // background: rgba(0,0,0,0.15);
+  border-radius: 5px;
+}

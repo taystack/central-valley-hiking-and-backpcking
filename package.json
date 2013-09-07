@@ -1,0 +1,46 @@
+{
+  "name": "central-valley-hiker",
+  "description": "Central valley hiking and backpacking",
+  "version": "0.1.0",
+  "homepage": "https://github.com/chaplinjs/grunt-init-chaplin",
+  "author": {
+    "name": "Taylor Stackpole",
+    "email": "tstackpole@concordusapps.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chaplinjs/grunt-init-chaplin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chaplinjs/grunt-init-chaplin/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/chaplinjs/grunt-init-chaplin/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": "0.8.x"
+  },
+  "devDependencies": {
+    "connect-url-rewrite": "0.1.x",
+    "grunt": "0.4.x",
+    "grunt-bower-task": "0.1.x",
+    "grunt-coffeelint": "git://github.com/vojtajina/grunt-coffeelint.git",
+    "grunt-contrib-clean": "0.4.0rc6",
+    "grunt-contrib-coffee": "0.4.0rc7",
+    "grunt-contrib-compass": "0.1.x",
+    "grunt-contrib-connect": "0.1.1rc6",
+    "grunt-contrib-copy": "0.4.0rc7",
+    "grunt-contrib-handlebars": "git://github.com/concordusapps/grunt-contrib-handlebars.git",
+    "grunt-contrib-htmlmin": "0.1.1rc7",
+    "grunt-contrib-mincss": "0.4.0rc7",
+    "grunt-contrib-watch": "0.2.0rc7",
+    "grunt-haml": "0.3.x",
+    "grunt-proxy": "0.0.x",
+    "grunt-requirejs": "0.3.x",
+    "grunt-urequire": "0.1.x",
+    "lodash": "0.10.x"
+  }
+}

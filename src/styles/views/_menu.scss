@@ -1,0 +1,90 @@
+#header {
+  position: absolute;
+  width: 100%;
+}
+#header #menu-links {
+  background-color: $link-color;
+  border-bottom: 1px solid $clear-border;
+  box-shadow: 0 0 2px 1px $clear-border;
+  display: block;
+  text-align: center;
+  i {
+    margin-top: 3px;
+    margin-right: 8px;
+  }
+  @media screen and (max-width: 600px) {
+    background-color: darken($link-color, 8%);
+    display: none;
+    text-align: left;
+    width: 100% !important;
+    i {
+      margin-left: 15px;
+    }
+  }
+}
+#header #mobile {
+  background-color: $link-color;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+  box-shadow: 0 0 2px 1px rgba(0,0,0,0.25);
+  color: white;
+  display: none;
+  line-height: 40px;
+  text-shadow: 0 -1px rgba(0,0,0, 0.4);
+  @include font(15pt, white);
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
+  @media screen and (min-width: 601px) {
+    display: none;
+  }
+  i {
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 15px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  #tablet {
+    display: inline;
+    @media screen and (max-width: 380px) {
+      @include font(12pt, white);
+    }
+  }
+}
+
+#header .link {
+  display: inline;
+  line-height: 40px;
+  padding-right: 40px;
+  @media screen and (max-width: 600px) {
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+  }
+}
+#header .title {
+  padding-top: 4px;
+  text-shadow: 0 -1px rgba(0,0,0, 0.4);
+  @include font(14pt, white);
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}
+#header i {
+  text-shadow: 0 -1px rgba(0,0,0, 0.4);
+}
+#header .menu-link {
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0,0,0, 0.4);
+  @include font(18pt, white);
+  @media screen and (max-width: 600px) {
+    @include font(15pt, white);
+  }
+}
+
+#header .link {
+  color: white;
+  &:hover {
+    color: darken(white, 25%);
+  }
+}

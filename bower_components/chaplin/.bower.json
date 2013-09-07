@@ -1,0 +1,16 @@
+{
+  "name": "chaplin",
+  "version": "0.8.1",
+  "main": "amd/chaplin.js",
+  "dependencies": {
+    "backbone": ">= 1.0.0"
+  },
+  "_release": "0.8.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.8.1",
+    "commit": "a8ef84cffa712f9c79aedc1d4496280f22df5e5c"
+  },
+  "_source": "git://github.com/chaplinjs/downloads.git",
+  "_target": "0.8.x"
+}

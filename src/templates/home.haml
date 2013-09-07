@@ -1,0 +1,49 @@
+.title Central Valley Hiking and Backpacking
+.fluid-grid
+  .span3.news
+    %h4 This is the news section
+  .span6.welcome
+    %h3 Welcoming hikers and backpackers, beginners to seasoned veterans.
+    %p Hiking and Backpacking for all levels of experience from the High Sierras of Lassen, Sequoia & Yosemite National Parks, Desolation Wilderness, Mt. Whitney and the Coastal Range etc.
+    %p From day hikes to week long treks!
+    %img{src: '../media/images/hiker_guy.jpg'}
+
+  .span3.info
+    #reg-info
+      %h5 You can subscribe as a Group Member and to get on our E-mail List using the registration form.
+      %p Usually you will receive no more than one or two E-mails per month, unless it is absolutely necessary such as a cancellation or other changes in plans, etc.
+    / %span
+    /   .thing Click this thing to go there
+    /   %h1.thingie THINGIE
+
+    #register
+      .reg-title Registration form
+        / %i.icon-plus.icon-minus
+      #form
+        %form
+          %label{for: 'name'} Name
+            %sup
+              %i.icon-star
+          %input#name{name: 'name', type: 'text', required: 'required'}
+          %label{for: 'email'} Email
+            %sup
+              %i.icon-star
+          %input#email{name: 'email', type: 'email', placeholder: 'you@example.com', required: 'required'}
+          %label{for: 'number-field'} Phone number
+            %sup
+              %i.icon-star
+          .new
+          %input#number-field{name: 'number-field', maxlength: "3", required: 'required'}
+          %i.icon-minus
+          %input#number-two{name: 'number-two', maxlength: "3", required: 'required'}
+          %i.icon-minus
+          %input#number-three{name: 'number-three', maxlength: "4", required: 'required'}
+          .new
+          %label{for: 'comments'} Comments
+          %textarea#comments{name: 'comments', type: 'text'}
+          .requirement Required fields
+            %sup
+              %i.icon-star
+
+          %button.submit{type: 'submit'} Register
+

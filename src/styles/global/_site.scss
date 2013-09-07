@@ -1,0 +1,55 @@
+#container {
+  margin: 0;
+  padding: 0;
+  @include font;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.reg-input-style {
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  padding: 6px;
+  width: 16em;
+}
+
+.clear {
+  height: $top-margin;
+}
+
+#container div p {
+  font-size: 12pt;
+  @media screen and (max-width: 900px) {
+    font-size: 10pt;
+  }
+}
+
+img#background{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity:0.75;
+  filter:alpha(opacity=40);
+}
+
+#body {
+  // background: whitesmoke;
+  // border: 2px solid $border-color;
+  // border-top: none;
+  // padding: {
+  //   left: 30px;
+  //   right: 30px;
+  // }
+  // @media screen and(max-width: 600px) {
+  //   padding: none;
+  // }
+}
+
+.hide {
+  display: none;
+}

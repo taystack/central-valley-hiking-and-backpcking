@@ -1,0 +1,54 @@
+{
+  "name": "central-valley-hiker",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "1.8.x",
+    "underscore": "1.4.x",
+    "underscore.string": "2.3.x",
+    "backbone": "0.9.x",
+    "backbone.stickit": "0.6.1",
+    "requirejs": "2.1.7",
+    "almond": "0.2.x",
+    "chaplin": "0.8.x",
+    "moment": "1.7.x",
+    "bootstrap-sass": "2.2.x",
+    "font-awesome": "3.2.x"
+  },
+  "exportsOverride": {
+    "jquery": {
+      "scripts": "jquery.js"
+    },
+    "almond": {
+      "scripts": "almond.js"
+    },
+    "backbone": {
+      "scripts": "backbone.js"
+    },
+    "backbone.stickit": {
+      "scripts": "backbone.stickit.js"
+    },
+    "requirejs": {
+      "scripts": "require.js"
+    },
+    "underscore": {
+      "scripts": "underscore.js"
+    },
+    "underscore.string": {
+      "scripts": "lib/underscore.string.js"
+    },
+    "chaplin": {
+      "scripts": "amd/chaplin.js"
+    },
+    "moment": {
+      "scripts": "moment.js"
+    },
+    "bootstrap-sass": {
+      "scripts": "docs/assets/js/bootstrap.js",
+      "styles": "lib/**/*.scss"
+    },
+    "font-awesome": {
+      "../media/fonts": "font/*",
+      "../styles/vendor": "sass/font-awesome.scss"
+    }
+  }
+}

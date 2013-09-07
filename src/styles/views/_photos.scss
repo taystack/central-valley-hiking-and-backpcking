@@ -1,0 +1,15 @@
+#photos {
+  embed {
+    width: 900px;
+    @media screen and(max-width: 900px) {
+      width: 100%;
+    }
+  }
+}
+#photos #stephen {
+  width: 194px;
+  tr td {
+    height: 194px;
+    background: url(https://picasaweb.google.com/s/c/transparent_album_background.gif) no-repeat left;
+  }
+}
