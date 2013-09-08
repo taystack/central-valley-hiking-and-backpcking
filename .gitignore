@@ -13,3 +13,6 @@
 
 # Generated from compiling SASS to CSS.
 /.sass-cache
+
+# Bower components
+/bower_components
